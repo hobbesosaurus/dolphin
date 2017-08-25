@@ -185,7 +185,7 @@ void DolphinItemListView::updateGridSize()
     switch (itemLayout()) {
     case KFileItemListView::IconsLayout: {
         const int minItemWidth = 48;
-        itemWidth = minItemWidth + IconsModeSettings::textWidthIndex() * 64;
+        itemWidth = minItemWidth + IconsModeSettings::textWidthIndex() * 32;
 
         if (previewsShown()) {
             // Optimize the width for previews with a 3:2 aspect ratio instead

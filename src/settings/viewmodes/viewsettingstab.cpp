@@ -92,6 +92,7 @@ ViewSettingsTab::ViewSettingsTab(Mode mode, QWidget* parent) :
     case IconsMode: {
         QLabel* widthLabel = new QLabel(i18nc("@label:listbox", "Width:"), textGroup);
         m_widthBox = new KComboBox(textGroup);
+        m_widthBox->addItem(i18nc("@item:inlistbox Text width", "Tiny"));
         m_widthBox->addItem(i18nc("@item:inlistbox Text width", "Small"));
         m_widthBox->addItem(i18nc("@item:inlistbox Text width", "Medium"));
         m_widthBox->addItem(i18nc("@item:inlistbox Text width", "Large"));
